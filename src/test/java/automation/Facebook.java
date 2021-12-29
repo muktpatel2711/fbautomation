@@ -17,7 +17,7 @@ public class Facebook {
 
 	@BeforeTest
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "\\src\\test\\resources\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -68,7 +68,7 @@ public class Facebook {
 
 	@AfterTest
 	public void tearDown() {
-
+		driver.quit();
 	}
 
 }
