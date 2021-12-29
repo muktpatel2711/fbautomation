@@ -47,7 +47,7 @@
 					<configuration>
 						<includes>
 							<include>
-								**/*MainRunner.java
+								**/*Facebook.java
 							</include>
 						</includes>
 					</configuration>
